@@ -630,7 +630,8 @@ input[type="radio"] {
     border-radius: 10px;
     height: 397px;
   }
-  .pick_cards .card {
+  .pick_cards .card,
+  .pick_cards .checkbox_div {
     width: 100%;
     justify-content: space-between;
   }
@@ -639,7 +640,7 @@ input[type="radio"] {
   }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 560px) {
   .content_side {
     width: 85%;
   }
@@ -647,7 +648,8 @@ input[type="radio"] {
     flex-direction: column;
     gap: 0;
   }
-  .step_cards .card {
+  .step_cards .card,
+  .step_cards .radio_div {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -668,10 +670,12 @@ input[type="radio"] {
   .paragraph {
     font-size: 14px;
     width: 210px;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
   }
-  .pick_cards .card {
+  .pick_cards .card,
+  .pick_cards .checkbox_div {
     height: 76px;
+    margin-bottom: 10px;
   }
   .pick_adds {
     width: 100%;
@@ -725,4 +729,9 @@ input[type="radio"] {
     width: 265px;
     line-height: 18px;
   }
+}
+
+.radio_div,
+.checkbox_div {
+  display: flex;
 }
