@@ -55,7 +55,7 @@ buttons.forEach((button) => {
         allSections[currentSectionIndex].style.display = "flex";
       }
       loadIcon.style.display = "none";
-    }, 2000);
+    }, 1500);
   });
 });
 
@@ -119,7 +119,7 @@ personalForm.addEventListener("submit", (e) => {
         allSections[currentSectionIndex].style.display = "flex";
       }
       loadIcon.style.display = "none";
-    }, 2000);
+    }, 1500);
   }
 });
 
@@ -137,5 +137,5 @@ submitBtn.addEventListener("click", (e) => {
     finishingContent.style.display = "none";
     finishedSubmit.style.display = "flex";
     loadIcon.style.display = "none";
-  }, 2000);
+  }, 1500);
 });
