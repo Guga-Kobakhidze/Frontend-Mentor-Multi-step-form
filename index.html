@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Multi-step form</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <section class="main_section personal_section">
+        <div class="container">
+          <div class="step_side">
+            <div class="steps">
+              <div class="step step1">
+                <span class="step_circle step_active">1</span>
+                <div class="step_info">
+                  <h4>Step 1</h4>
+                  <h3>Your info</h3>
+                </div>
+              </div>
+              <div class="step step2">
+                <span class="step_circle">2</span>
+                <div class="step_info">
+                  <h4>Step 2</h4>
+                  <h3>Select plan</h3>
+                </div>
+              </div>
+              <div class="step step3">
+                <span class="step_circle">3</span>
+                <div class="step_info">
+                  <h4>Step 3</h4>
+                  <h3>Add-ons</h3>
+                </div>
+              </div>
+              <div class="step step4">
+                <span class="step_circle">4</span>
+                <div class="step_info">
+                  <h4>Step 4</h4>
+                  <h3>Summary</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content_side">
+            <h1 class="title">Personal info</h1>
+            <p class="paragraph">
+              Please provide your name, email address, and phone number.
+            </p>
+            <form class="personal_forms">
+              <div class="forms_inputs">
+                <div class="labels">
+                  <label>Name</label>
+                  <label for="name" class="alert"></label>
+                </div>
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="e.g. Stephen King"
+                />
+                <div class="labels">
+                  <label>Email Address</label>
+                  <label for="email" class="alert"></label>
+                </div>
+                <input
+                  id="email"
+                  type="text"
+                  name="email"
+                  placeholder="e.g. stephenking@lorem.com"
+                />
+                <div class="labels">
+                  <label>Phone Number</label>
+                  <label for="number" class="alert"></label>
+                </div>
+                <input
+                  id="number"
+                  type="text"
+                  name="number"
+                  placeholder="e.g. +1 234 567 890"
+                />
+              </div>
+              <label class="form_buttons">
+                <button class="go_back">Go Back</button>
+                <button type="submit">Next Step</button>
+              </label>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="main_section select_section">
+        <div class="container">
+          <div class="step_side">
+            <div class="steps">
+              <div class="step step1">
+                <span class="step_circle">1</span>
+                <div class="step_info">
+                  <h4>Step 1</h4>
+                  <h3>Your info</h3>
+                </div>
+              </div>
+              <div class="step step2">
+                <span class="step_circle step_active">2</span>
+                <div class="step_info">
+                  <h4>Step 2</h4>
+                  <h3>Select plan</h3>
+                </div>
+              </div>
+              <div class="step step3">
+                <span class="step_circle">3</span>
+                <div class="step_info">
+                  <h4>Step 3</h4>
+                  <h3>Add-ons</h3>
+                </div>
+              </div>
+              <div class="step step4">
+                <span class="step_circle">4</span>
+                <div class="step_info">
+                  <h4>Step 4</h4>
+                  <h3>Summary</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content_side">
+            <h1 class="title">Select your plan</h1>
+            <p class="paragraph">
+              You have the option of monthly or yearly billing.
+            </p>
+            <form class="step_forms">
+              <div class="step_cards monthly_cards">
+                <input
+                  type="radio"
+                  name="card-select"
+                  id="radio1"
+                  data-price="9"
+                />
+                <input
+                  type="radio"
+                  name="card-select"
+                  id="radio2"
+                  data-price="12"
+                />
+                <input
+                  type="radio"
+                  name="card-select"
+                  id="radio3"
+                  data-price="15"
+                />
+                <label for="radio1" class="card cardMonth card1">
+                  <img src="assets/images/icon-arcade.svg" alt="arcade" />
+                  <div class="radioCard_content">
+                    <h2 class="card_title">Arcade</h2>
+                    <h3 class="monthly">$9/mo</h3>
+                  </div>
+                </label>
+                <label for="radio2" class="card cardMonth card2">
+                  <img src="assets/images/icon-advanced.svg" alt="advanced" />
+                  <div class="radioCard_content">
+                    <h2 class="card_title">Advanced</h2>
+                    <h3 class="monthly">$12/mo</h3>
+                  </div>
+                </label>
+                <label for="radio3" class="card cardMonth card3">
+                  <img src="assets/images/icon-pro.svg" alt="pro" />
+                  <div class="radioCard_content">
+                    <h2 class="card_title">Pro</h2>
+                    <h3 class="monthly">$15/mo</h3>
+                  </div>
+                </label>
+              </div>
+              <div class="step_cards yearly_cards">
+                <input
+                  type="radio"
+                  name="card-select"
+                  id="radio4"
+                  data-price="90"
+                />
+                <input
+                  type="radio"
+                  name="card-select"
+                  id="radio5"
+                  data-price="120"
+                />
+                <input
+                  type="radio"
+                  name="card-select"
+                  id="radio6"
+                  data-price="150"
+                />
+                <label for="radio4" class="card cardYear card4">
+                  <img src="assets/images/icon-arcade.svg" alt="arcade" />
+                  <div class="radioCard_content">
+                    <h2 class="card_title">Arcade</h2>
+                    <h3 class="yearly">$90/yr</h3>
+                    <h4 class="ySales">2 months free</h4>
+                  </div>
+                </label>
+                <label for="radio5" class="card cardYear card5">
+                  <img src="assets/images/icon-advanced.svg" alt="advanced" />
+                  <div class="radioCard_content">
+                    <h2 class="card_title">Advanced</h2>
+                    <h3 class="yearly">$120/yr</h3>
+                    <h4 class="ySales">2 months free</h4>
+                  </div>
+                </label>
+                <label for="radio6" class="card cardYear card6">
+                  <img src="assets/images/icon-pro.svg" alt="pro" />
+                  <div class="radioCard_content">
+                    <h2 class="card_title">Pro</h2>
+                    <h3 class="yearly">$150/yr</h3>
+                    <h4 class="ySales">2 months free</h4>
+                  </div>
+                </label>
+              </div>
+              <div class="switcher">
+                <h4 class="switcher-color" id="monthlyButton">Monthly</h4>
+                <button class="switcher_btn">
+                  <span class="switch_btn"></span>
+                </button>
+                <h4 id="yearlyButton">Yearly</h4>
+              </div>
+              <label class="form_buttons">
+                <button class="go_back">Go Back</button>
+                <button type="submit" class="go_next">Next Step</button>
+              </label>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="main_section pick_section">
+        <div class="container">
+          <div class="step_side">
+            <div class="steps">
+              <div class="step step1">
+                <span class="step_circle">1</span>
+                <div class="step_info">
+                  <h4>Step 1</h4>
+                  <h3>Your info</h3>
+                </div>
+              </div>
+              <div class="step step2">
+                <span class="step_circle">2</span>
+                <div class="step_info">
+                  <h4>Step 2</h4>
+                  <h3>Select plan</h3>
+                </div>
+              </div>
+              <div class="step step3">
+                <span class="step_circle step_active">3</span>
+                <div class="step_info">
+                  <h4>Step 3</h4>
+                  <h3>Add-ons</h3>
+                </div>
+              </div>
+              <div class="step step4">
+                <span class="step_circle">4</span>
+                <div class="step_info">
+                  <h4>Step 4</h4>
+                  <h3>Summary</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content_side">
+            <h1 class="title">Pick add-ons</h1>
+            <p class="paragraph">
+              Add-ons help enhance your gaming experience.
+            </p>
+            <div class="pick_forms">
+              <div class="pick_cards check_monthly">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="card-check"
+                  id="myCheckbox1"
+                  data-target="service"
+                  data-price="1"
+                />
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="card-check"
+                  id="myCheckbox2"
+                  data-target="storage"
+                  data-price="2"
+                />
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="card-check"
+                  id="myCheckbox3"
+                  data-target="profile"
+                  data-price="2"
+                />
+                <label for="myCheckbox1" class="card" id="checked_card1">
+                  <div class="pick_adds">
+                    <h3>Online service</h3>
+                    <p class="paragraph sparagraph">
+                      Access to multiplayer games
+                    </p>
+                  </div>
+                  <div class="plusPrice">
+                    <p class="paragraph sparagraph">+$1/mo</p>
+                  </div>
+                </label>
+                <label for="myCheckbox2" class="card" id="checked_card2">
+                  <div class="pick_adds">
+                    <h3>Larger storage</h3>
+                    <p class="paragraph sparagraph">Extra 1TB of cloud save</p>
+                  </div>
+                  <div class="plusPrice">
+                    <p class="paragraph sparagraph">+$2/mo</p>
+                  </div>
+                </label>
+                <label for="myCheckbox3" class="card" id="checked_card3">
+                  <div class="pick_adds">
+                    <h3>Customizable Profile</h3>
+                    <p class="paragraph sparagraph">
+                      Custom theme on your profile
+                    </p>
+                  </div>
+                  <div class="plusPrice">
+                    <p class="paragraph sparagraph">+$2/mo</p>
+                  </div>
+                </label>
+              </div>
+              <div class="pick_cards check_yearly">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="card-check"
+                  id="myCheckbox4"
+                  data-target="service"
+                  data-price="10"
+                />
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="card-check"
+                  id="myCheckbox5"
+                  data-target="storage"
+                  data-price="20"
+                />
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="card-check"
+                  id="myCheckbox6"
+                  data-target="profile"
+                  data-price="20"
+                />
+                <label for="myCheckbox4" class="card" id="checked_card4">
+                  <div class="pick_adds">
+                    <h3>Online service</h3>
+                    <p class="paragraph sparagraph">
+                      Access to multiplayer games
+                    </p>
+                  </div>
+                  <div class="plusPrice">
+                    <p class="paragraph sparagraph">+$10/yr</p>
+                  </div>
+                </label>
+                <label for="myCheckbox5" class="card" id="checked_card5">
+                  <div class="pick_adds">
+                    <h3>Larger storage</h3>
+                    <p class="paragraph sparagraph">Extra 1TB of cloud save</p>
+                  </div>
+                  <div class="plusPrice">
+                    <p class="paragraph sparagraph">+$20/yr</p>
+                  </div>
+                </label>
+                <label for="myCheckbox6" class="card" id="checked_card6">
+                  <div class="pick_adds">
+                    <h3>Customizable Profile</h3>
+                    <p class="paragraph sparagraph">
+                      Custom theme on your profile
+                    </p>
+                  </div>
+                  <div class="plusPrice">
+                    <p class="paragraph sparagraph">+$20/yr</p>
+                  </div>
+                </label>
+              </div>
+              <label class="form_buttons">
+                <button class="go_back">Go Back</button>
+                <button class="go_next">Next Step</button>
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main_section finishing_section">
+        <div class="container">
+          <div class="step_side">
+            <div class="steps">
+              <div class="step step1">
+                <span class="step_circle">1</span>
+                <div class="step_info">
+                  <h4>Step 1</h4>
+                  <h3>Your info</h3>
+                </div>
+              </div>
+              <div class="step step2">
+                <span class="step_circle">2</span>
+                <div class="step_info">
+                  <h4>Step 2</h4>
+                  <h3>Select plan</h3>
+                </div>
+              </div>
+              <div class="step step3">
+                <span class="step_circle">3</span>
+                <div class="step_info">
+                  <h4>Step 3</h4>
+                  <h3>Add-ons</h3>
+                </div>
+              </div>
+              <div class="step step4">
+                <span class="step_circle step_active">4</span>
+                <div class="step_info">
+                  <h4>Step 4</h4>
+                  <h3>Summary</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content_side finishing_content">
+            <h1 class="title">Finishing up</h1>
+            <p class="paragraph">
+              Double-check everything looks OK before confirming.
+            </p>
+            <div class="finishing_forms">
+              <div class="finishing_result">
+                <div class="selected_price">
+                  <div class="selected_price-title">
+                    <h4 class="put_name"></h4>
+                    <div class="change_button">
+                      <button class="change_btn" id="change-btn">Change</button>
+                    </div>
+                  </div>
+                  <h5 class="put_price"></h5>
+                </div>
+                <div class="monthly_checkbox">
+                  <div class="service_checked checked_result">
+                    <h4 class="add_title add_service">Online service</h4>
+                    <h4 class="add_price service_price">
+                      +$<span class="service_span span"></span>/mo
+                    </h4>
+                  </div>
+                  <div class="storage_checked checked_result">
+                    <h4 class="add_title add_storage">Larger storage</h4>
+                    <h4 class="add_price storage_price">
+                      +$<span class="storage_span span"></span>/mo
+                    </h4>
+                  </div>
+                  <div class="profile_cheked checked_result">
+                    <h4 class="add_title add_profile">Customizable Profile</h4>
+                    <h4 class="add_price profile_price">
+                      +$<span class="profile_span span">2</span>/mo
+                    </h4>
+                  </div>
+                </div>
+                <div class="yearly_checkbox">
+                  <div class="service_checked checked_result">
+                    <h4 class="add_title add_service">Online service</h4>
+                    <h4 class="add_price service_price">
+                      +$<span class="service_span span">10</span>/yr
+                    </h4>
+                  </div>
+                  <div class="storage_checked checked_result">
+                    <h4 class="add_title add_storage">Larger storage</h4>
+                    <h4 class="add_price storage_price">
+                      +$<span class="storage_span span">20</span>/yr
+                    </h4>
+                  </div>
+                  <div class="profile checked checked_result">
+                    <h4 class="add_title add_profile">Customizable Profile</h4>
+                    <h4 class="add_price profile_price">
+                      +$<span class="profile_span span">20</span>/yr
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="last_result">
+                <h3 class="total_title-month">
+                  Total (per month) <span class="total_m">mo</span>
+                </h3>
+                <h3 class="total_title-year">
+                  Total (per year) <span class="total_y">yr</span>
+                </h3>
+                <h4 id="last_price"></h4>
+              </div>
+            </div>
+            <label class="form_buttons">
+              <button class="go_back" id="go-back">Go Back</button>
+              <button type="submit" class="confirm">Confirm</button>
+            </label>
+          </div>
+          <div class="finished_submit">
+            <img src="assets/images/icon-thank-you.svg" alt="img" />
+            <h2 class="title">Thank you!</h2>
+            <p class="paragraph">
+              Thanks for confirming your subscription! We hope you have fun
+              using our platform. if you ever need support, please feel free to
+              email us at support@loremgaming.com
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="assets/forms.js"></script>
+    <script src="assets/switcher.js"></script>
+    <script src="assets/inputs.js"></script>
+  </body>
+</html>
